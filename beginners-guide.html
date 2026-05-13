@@ -1,69 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blue Prince Beginner's Guide: core mechanics, step management, and how to start your first run strong.">
-    <title>Beginner's Guide | Blue Prince Guide</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beginner's Guide | Blue Prince Guide</title>
+  <meta name="description" content="Blue Prince beginner guide: core loop, steps, drafting, resources, and first run strategy.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <div class="header-inner">
-                <div class="logo">
-                    <a href="index.html">
-                        <span class="logo-icon">🏠</span>
-                        <span class="logo-text">Blue Prince Guide</span>
-                    </a>
-                </div>
-                <nav class="main-nav" id="mainNav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="beginners-guide.html" class="active">Beginner's Guide</a></li>
-                        <li><a href="rooms.html">Rooms</a></li>
-                        <li><a href="items.html">Items</a></li>
-                        <li><a href="tips.html">Tips & Tricks</a></li>
-                    </ul>
-                </nav>
-                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
-            </div>
-        </div>
-    </header>
 
-    <section class="page-header">
-        <div class="container">
-            <h1>Beginner's Guide</h1>
-            <p>Everything you need to know to survive your first visit to Mont Holly Mansion</p>
-        </div>
-    </section>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <a href="index.html">
+        <span class="logo-icon">🏠</span>
+        <span class="logo-text">Blue Prince Guide</span>
+      </a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="beginners-guide.html" class="active">Beginner's Guide</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="items.html">Items</a></li>
+        <li><a href="tips.html">Tips & Tricks</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-    <section class="content">
-        <div class="container">
-            <h2>Core Game Loop</h2>
-            <p>Every playthrough of Blue Prince is a unique mansion. You start at the entrance, and each day you add one new room to the mansion from four available options. Your goal is to reach the Temple at the top floor, collecting gems and uncovering secrets along the way.</p>
+<section class="page-header">
+  <h1>Beginner's Guide</h1>
+  <p>Everything you need to survive your first run in Mont Holly Mansion.</p>
+</section>
 
-            <h2>Step Management</h2>
-            <p>Steps are your most valuable resource. Every action costs steps, and once you run out, the day ends. Prioritize actions that give you permanent step bonuses or unlock new areas early.</p>
+<div class="content container">
+  <h2>Core Game Loop</h2>
+  <div class="steps">
+    <div class="step"><div class="step-num"></div><div class="step-content"><h4>Wake up in the Entrance</h4><p>Every run starts fresh. You have limited steps.</p></div></div>
+    <div class="step"><div class="step-num"></div><div class="step-content"><h4>Draft rooms at doorways</h4><p>Choose 1 of 3 rooms to place. Doors must align.</p></div></div>
+    <div class="step"><div class="step-num"></div><div class="step-content"><h4>Collect resources</h4><p>Gather coins, gems, keys, and items.</p></div></div>
+    <div class="step"><div class="step-num"></div><div class="step-content"><h4>Reach the Basement</h4><p>Your main goal: find and enter B1.</p></div></div>
+    <div class="step"><div class="step-num"></div><div class="step-content"><h4>Run ends, knowledge stays</h4><p>Unlocked rooms carry over between runs.</p></div></div>
+  </div>
 
-            <h2>Key Resources</h2>
-            <ul>
-                <li><strong>Coins:</strong> Used to buy items in the Shop room</li>
-                <li><strong>Keys:</strong> Open locked doors to new rooms</li>
-                <li><strong>Stamps:</strong> Powerful modifiers that affect your entire run</li>
-                <li><strong>Gems:</strong> Collect all 9 to unlock the true ending</li>
-            </ul>
-        </div>
-    </section>
+  <h2>Step Management</h2>
+  <p>Steps = your life force. Running out ends the run instantly.</p>
+  <div class="tip-box warning"><strong>Plan every move</strong><p>Don’t explore randomly. Always have a goal.</p></div>
+  <div class="tip-box"><strong>Antechamber is critical</strong><p>Gives +10 steps. Prioritize it above almost everything.</p></div>
 
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2025 Blue Prince Guide. This is a fan-made guide.</p>
-            <a href="privacy.html">Privacy Policy</a>
-        </div>
-    </footer>
+  <h2>Resource Priority</h2>
+  <div class="table-wrap">
+    <table>
+      <tr><th>Resource</th><th>Priority</th><th>Purpose</th></tr>
+      <tr><td>Gems</td><td><span class="badge badge-gold">Highest</span></td><td>Unlock permanent rooms</td></tr>
+      <tr><td>Keys</td><td><span class="badge badge-gold">High</span></td><td>Open doors & basement</td></tr>
+      <tr><td>Steps</td><td><span class="badge badge-red">Critical</span></td><td>Keep your run alive</td></tr>
+      <tr><td>Coins</td><td><span class="badge badge-blue">Medium</span></td><td>Buy shop items</td></tr>
+    </table>
+  </div>
 
-    <script src="script.js"></script>
+  <h2>First Run Goals</h2>
+  <ul>
+    <li>Find the <strong>Antechamber</strong></li>
+    <li>Collect at least <strong>2 gems</strong></li>
+    <li>Get <strong>1+ keys</strong></li>
+    <li>Learn room door patterns</li>
+    <li><strong>Don’t rush the basement</strong></li>
+  </ul>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><span class="logo-icon">🏠</span><span class="logo-text">Blue Prince Guide</span><p>Complete fan-made guide.</p></div>
+    <div class="footer-col"><h4>Guide</h4><ul><li><a href="beginners-guide.html">Beginner's Guide</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="items.html">Items</a></li><li><a href="tips.html">Tips</a></li></ul></div>
+    <div class="footer-col"><h4>Site</h4><ul><li><a href="index.html">Home</a></li><li><a href="privacy.html">Privacy</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 Blue Prince Guide | Fan-made.</p></div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
