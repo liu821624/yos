@@ -1,11 +1,11 @@
-// Mobile nav
+// Mobile Navigation
 const navToggle = document.getElementById('navToggle');
 const mainNav = document.getElementById('mainNav');
 
 if (navToggle && mainNav) {
   navToggle.addEventListener('click', () => {
-    const open = mainNav.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', open);
+    const isOpen = mainNav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen);
   });
 
   mainNav.querySelectorAll('a').forEach(link => {
@@ -16,20 +16,20 @@ if (navToggle && mainNav) {
   });
 }
 
-// Auto active menu
-const current = location.pathname.split('/').pop() || 'index.html';
+// Auto Active Nav
+const currentFile = location.pathname.split('/').pop() || 'index.html';
 document.querySelectorAll('.main-nav a').forEach(link => {
   const href = link.getAttribute('href');
-  link.classList.toggle('active', href === current);
+  link.classList.toggle('active', href === currentFile);
 });
 
-// Smooth scroll
+// Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', e => {
-    const t = document.querySelector(anchor.getAttribute('href'));
-    if (t) {
+  anchor.addEventListener('click', (e) => {
+    const target = document.querySelector(anchor.getAttribute('href'));
+    if (target) {
       e.preventDefault();
-      t.scrollIntoView({ behavior: 'smooth' });
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   });
 });
