@@ -1,68 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blue Prince Items Guide: all resources, shop items, stamps, and the 9 Gem system explained.">
-    <title>Items Guide | Blue Prince Guide</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Items & Resources | Blue Prince Guide</title>
+  <meta name="description" content="Blue Prince items, gems, keys, coins, stamps, and shop upgrades.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <div class="header-inner">
-                <div class="logo">
-                    <a href="index.html">
-                        <span class="logo-icon">🏠</span>
-                        <span class="logo-text">Blue Prince Guide</span>
-                    </a>
-                </div>
-                <nav class="main-nav" id="mainNav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="beginners-guide.html">Beginner's Guide</a></li>
-                        <li><a href="rooms.html">Rooms</a></li>
-                        <li><a href="items.html" class="active">Items</a></li>
-                        <li><a href="tips.html">Tips & Tricks</a></li>
-                    </ul>
-                </nav>
-                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
-            </div>
-        </div>
-    </header>
 
-    <section class="page-header">
-        <div class="container">
-            <h1>Items & Collectibles</h1>
-            <p>All resources, shop items, and stamps you'll find in Mont Holly</p>
-        </div>
-    </section>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <a href="index.html">
+        <span class="logo-icon">🏠</span>
+        <span class="logo-text">Blue Prince Guide</span>
+      </a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="beginners-guide.html">Beginner's Guide</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="items.html" class="active">Items</a></li>
+        <li><a href="tips.html">Tips & Tricks</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-    <section class="content">
-        <div class="container">
-            <h2>Shop Items</h2>
-            <ul>
-                <li><strong>Boots:</strong> Reduces step cost for moving between rooms</li>
-                <li><strong>Compass:</strong> Reveals the location of the Temple early</li>
-                <li><strong>Key Ring:</strong> Doubles the number of keys you can carry</li>
-            </ul>
+<section class="page-header">
+  <h1>Items & Resources</h1>
+  <p>All items, currencies, and upgrades explained.</p>
+</section>
 
-            <h2>Stamps</h2>
-            <p>Stamps are permanent modifiers that affect your entire run. Collecting multiple stamps of the same type unlocks powerful bonuses.</p>
+<div class="content container">
+  <h2>Core Resources</h2>
+  <div class="two-col">
+    <div class="room-card"><h3>Gems</h3><p>Unlock permanent rooms. Highest priority.</p></div>
+    <div class="room-card"><h3>Keys</h3><p>Open doors & basement. Save 1 for endgame.</p></div>
+    <div class="room-card"><h3>Coins</h3><p>Spend in Shop. Don’t hoard.</p></div>
+    <div class="room-card"><h3>Stamps</h3><p>Use in Post Office for bonuses.</p></div>
+  </div>
 
-            <h2>The 9 Gems</h2>
-            <p>Collecting all 9 gems is required to unlock the true ending. Each gem is hidden in a different part of the mansion, requiring specific rooms or items to reach.</p>
-        </div>
-    </section>
+  <h2>Shop Items</h2>
+  <div class="table-wrap">
+    <table>
+      <tr><th>Item</th><th>Cost</th><th>Use</th></tr>
+      <tr><td>Compass</td><td>3</td><td>Reveal nearby rooms</td></tr>
+      <tr><td>Lantern</td><td>4</td><td>See hidden items</td></tr>
+      <tr><td>Lockpick</td><td>3</td><td>Open 1 locked door</td></tr>
+      <tr><td>Ration</td><td>2</td><td>+5 steps</td></tr>
+    </table>
+  </div>
 
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2025 Blue Prince Guide. This is a fan-made guide.</p>
-            <a href="privacy.html">Privacy Policy</a>
-        </div>
-    </footer>
+  <h2>The 9 Gems</h2>
+  <div class="tip-box"><strong>Each gem unlocks a permanent room</strong><p>Collecting all 9 is required for true endgame.</p></div>
+  <ul>
+    <li>Gems reset each run</li>
+    <li>Rooms with gems are always consistent</li>
+    <li>Spend gems immediately for better runs</li>
+  </ul>
+</div>
 
-    <script src="script.js"></script>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><span class="logo-icon">🏠</span><span class="logo-text">Blue Prince Guide</span><p>Complete fan-made guide.</p></div>
+    <div class="footer-col"><h4>Guide</h4><ul><li><a href="beginners-guide.html">Beginner's Guide</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="items.html">Items</a></li><li><a href="tips.html">Tips</a></li></ul></div>
+    <div class="footer-col"><h4>Site</h4><ul><li><a href="index.html">Home</a></li><li><a href="privacy.html">Privacy</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 Blue Prince Guide | Fan-made.</p></div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
